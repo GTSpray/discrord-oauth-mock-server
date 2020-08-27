@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const { randomStringNumber } = require("../services/random.service");
 
-router.get("/", (req, res, next) => {
+router.get("/", (_req, res) => {
   res.render("index", { title: "Express" });
 });
 
