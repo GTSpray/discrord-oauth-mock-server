@@ -30,6 +30,15 @@ router.get("/@me/guilds", (_req, res) => {
       permissions: parseInt(permissions, 10),
       features: ["ANIMATED_ICON", "INVITE_SPLASH"],
       permissions_new: permissions
+    },
+    {
+      id: "581630635346247630",
+      name: `randomServer ${randomStringNumber(5)}`,
+      icon: randomStringNumber(32),
+      owner: false,
+      permissions: parseInt(permissions, 10),
+      features: ["ANIMATED_ICON", "INVITE_SPLASH"],
+      permissions_new: permissions
     }
   ]);
 });
